@@ -1,0 +1,40 @@
+extends layout
+
+block content
+
+  .container#search-flight
+    .row
+      form#search-form
+        .form-group.col-md-4
+          label(for='from') From location
+          br
+          input#from.form-control(type='text', name='from', placeholder='Sydney', required)
+        .form-group.col-md-4
+          label(for='to') To location
+          br
+          input#to.form-control(type='text', name='to', placeholder='Heathrow', required)
+        .form-group.col-md-4
+          label(for='date') Travel Date
+          br
+          input#date.form-control(type='text', name='date', placeholder='2016-09-02', required)
+        .form-group.col-md-12.text-center
+          button.btn.btn-primary(type='submit') Search
+
+    .row#search-flight-data-container
+      .col-md-12
+        ul#dates.nav.nav-tabs.nav-justified
+
+        #fountainG
+          #fountainG_1.fountainG
+          #fountainG_2.fountainG
+          #fountainG_3.fountainG
+          #fountainG_4.fountainG
+          #fountainG_5.fountainG
+          #fountainG_6.fountainG
+          #fountainG_7.fountainG
+          #fountainG_8.fountainG
+
+
+        #data.container-fluid
+
+
